@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: url("fondo-con-cosas-de-cine2c-claqueta2c-camara-todo-eso65386732cd1240dbbefde093d19ecc53.png") center/cover fixed no-repeat;
+            backdrop-filter: blur(5px);
+            color: #F39F5A;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            background-size: cover fixed;
+        }
+
+        .login-container {
+            background-color: rgba(102, 37, 73, 0.7);
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+
+        .login-container h1 {
+            color: #F39F5A;
+        }
+
+        .login-container img {
+            max-width: 200px;
+        }
+
+        .login-container input[type="text"],
+        .login-container input[type="password"] {
+            width: 90%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none; /* Corregido el valor del borde */
+            border-radius: 10px;
+        }
+
+        .login-container button {
+            background-color: #AE445A;
+            color: #F39F5A;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .login-container button:hover {
+            background-color: #F39F5A;
+            color: #662549;
+        }
+
+        .forgot-password-link, .register-link {
+            color: #f7f7f7;
+            text-decoration: none;
+        }
+
+        .forgot-password-link:hover, .register-link:hover {
+            color: #F39F5A;
+        }
+
+        /* Estilos para diferentes tamaños de pantalla */
+        @media screen and (max-width: 767px) {
+            .login-container {
+                max-width: 90%; /* Ancho máximo para teléfonos celulares */
+            }
+            .login-container h1 {
+                font-size: 1.5em; /* Tamaño de fuente más pequeño en teléfonos */
+            }
+        }
+        @media screen and (min-width: 768px) and (max-width: 1023px) {
+            .login-container {
+                max-width: 80%; /* Ancho máximo para tablets */
+            }
+        }
+        @media screen and (min-width: 1024px) {
+            .login-container {
+                max-width: 400px; /* Ancho máximo para computadoras */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="n.png" alt="Logo">
+        <h1>Iniciar Sesión</h1>
+        <form>
+            <input type="text" placeholder="Usuario">
+            <input type="password" placeholder="Contraseña">
+            <button>Ingresar</button>
+            <p><a href="#" class="forgot-password-link">¿Olvidaste tu contraseña?</a></p>
+            <p><a href="#" class="register-link">¿No tienes una cuenta? Regístrate</a></p>
+        </form>
+    </div>
+</body>
+</html>
